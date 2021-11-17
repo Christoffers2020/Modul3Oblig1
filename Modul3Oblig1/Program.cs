@@ -36,5 +36,6 @@ namespace Modul3Oblig1
                 Console.WriteLine(response);
             }
         }
+
     }
 }

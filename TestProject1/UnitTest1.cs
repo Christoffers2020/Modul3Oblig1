@@ -26,7 +26,7 @@ namespace TestProject1
                     Mother = new Person() {Id = 29, FirstName = "Lise"},
                 };
 
-                var actualDescription = p.GetDescription(out int id);
+                var actualDescription = p.GetDescription();
                 var expectedDescription =
                     "Ola Nordmann (Id=17) Født: 2000 Død: 3000 Far: Per (Id=23) Mor: Lise (Id=29) ";
 
@@ -40,7 +40,7 @@ namespace TestProject1
                 Id = 1,
             };
 
-            var actualDescription = p.GetDescription(out int id);
+            var actualDescription = p.GetDescription();
             var expectedDescription = "(Id=1) ";
 
             Assert.AreEqual(expectedDescription, actualDescription);
@@ -56,7 +56,7 @@ namespace TestProject1
 
             };
 
-            var actualDescription = p.GetDescription(out int id);
+            var actualDescription = p.GetDescription();
             var expectedDescription = "(Id=5) Marius Borg Høiby ";
 
             Assert.AreEqual(expectedDescription, actualDescription);

@@ -18,9 +18,9 @@ namespace Modul3Oblig1
         public Person Mother { get; set; }
 
 
-        public string GetDescription(out int id)
+        public string GetDescription()
         {
-            id = Id;
+           // id = Id;
             string Description = "";
 
             Description += addField(FirstName, "", " ");
